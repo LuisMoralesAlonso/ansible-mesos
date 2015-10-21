@@ -6,7 +6,7 @@ mesos_version: "0.21.0"
 
 # conf file settings
 mesos_cluster_name: "bbva_mesos"
-mesos_ip: "{{ansible_eth1.ipv4.address}}"
+mesos_ip: "{{ansible_default_ipv4.address}}"
 mesos_hostname: "{{ inventory_hostname }}"
 mesos_port: "5050"
 mesos_slave_port: "5051"
